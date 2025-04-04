@@ -3,6 +3,10 @@ import random
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Aviator Crash Game API is running!"
+
 @app.route('/crash', methods=['GET'])
 def crash():
     crash_point = round(random.uniform(1.00, 10.00), 2)
