@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import random
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Aviator Crash Game API is running!"
+    return render_template("index.html")  # serve frontend
 
 @app.route('/crash', methods=['GET'])
 def crash():
