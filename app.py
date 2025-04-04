@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route(/game, /login, /play, etc.')
 def home():
     return "Flask is running on Render!"
 
