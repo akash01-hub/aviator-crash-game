@@ -3,7 +3,7 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/game')
+@app.route('/game URL')
 def home():
     return "Aviator Crash Game API is running!"
 
